@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,max,step,lcm;
+    printf("enter the first element a:");
+    scanf("%d",&a);
+    printf("enter the second element b:");
+    scanf("%d",&b);
+    if(a>b)
+    max=step=a;
+    else
+    max=step=b;
+    while(1)
+    {
+        if(max%a==0&&max%b==0)
+        {
+            lcm=max;
+            break;
+        }
+        max+=step;
+        }
+        printf("LCM is %d",lcm);
+        return 0;
+    }
